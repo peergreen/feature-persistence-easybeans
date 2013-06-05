@@ -17,22 +17,18 @@ package com.peergreen.persistence.easybeans.extension.webapplication;
 
 import java.net.URL;
 
-import org.apache.felix.ipojo.annotations.Component;
-import org.apache.felix.ipojo.annotations.Instantiate;
 import org.ow2.easybeans.loader.EasyBeansClassLoader;
 
 import com.peergreen.deployment.ProcessorContext;
 import com.peergreen.deployment.ProcessorException;
 import com.peergreen.deployment.processor.Phase;
-import com.peergreen.deployment.processor.handler.Processor;
+import com.peergreen.deployment.processor.Processor;
 import com.peergreen.webcontainer.WebApplication;
 
 /**
  * Adds an enhancement classloader once the classloader for webapplication has been defined
  * @author Florent Benoit
  */
-@Component
-@Instantiate
 @Processor
 @Phase("POST_CLASSLOADER")
 public class WebApplicationPersistenceClassLoaderProcessor {

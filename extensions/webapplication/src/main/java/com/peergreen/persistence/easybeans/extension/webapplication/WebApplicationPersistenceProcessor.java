@@ -17,8 +17,6 @@ package com.peergreen.persistence.easybeans.extension.webapplication;
 
 import java.net.URI;
 
-import org.apache.felix.ipojo.annotations.Component;
-import org.apache.felix.ipojo.annotations.Instantiate;
 import org.apache.felix.ipojo.annotations.Requires;
 import org.ow2.easybeans.persistence.EZBPersistenceUnitManager;
 import org.ow2.easybeans.persistence.EZBPersistenceXmlAnalyzer;
@@ -30,15 +28,13 @@ import com.peergreen.deployment.ProcessorException;
 import com.peergreen.deployment.facet.archive.Archive;
 import com.peergreen.deployment.facet.archive.ArchiveException;
 import com.peergreen.deployment.processor.Phase;
-import com.peergreen.deployment.processor.handler.Processor;
+import com.peergreen.deployment.processor.Processor;
 import com.peergreen.webcontainer.WebApplication;
 
 /**
  * Allows to analyze the persistence metadata
  * @author Florent Benoit
  */
-@Component
-@Instantiate
 @Processor
 @Phase("PRE_METADATA")
 public class WebApplicationPersistenceProcessor {
