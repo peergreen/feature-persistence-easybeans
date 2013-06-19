@@ -29,7 +29,7 @@
   <name>Peergreen Persistence with EasyBeans</name>
 
   <properties>
-    <easybeans-persistence.version>3.0.0-M1-SNAPSHOT</easybeans-persistence.version>
+    <easybeans-persistence.version>3.0.0-M1</easybeans-persistence.version>
   </properties>
 
   <modules>
