@@ -24,9 +24,9 @@ import org.ow2.util.ee.metadata.common.api.view.IJavaxPersistenceView;
 import org.ow2.util.scan.api.metadata.IMetadata;
 
 import com.peergreen.deployment.Artifact;
-import com.peergreen.injection.Binding;
-import com.peergreen.injection.InjectionContext;
-import com.peergreen.injection.InjectionProcessor;
+import com.peergreen.metadata.adapter.Binding;
+import com.peergreen.metadata.adapter.InjectionContext;
+import com.peergreen.metadata.adapter.InjectionProcessor;
 
 @InjectionProcessor("javax.persistence.PersistenceContext")
 public class PersistenceContextInjectionProcessor {

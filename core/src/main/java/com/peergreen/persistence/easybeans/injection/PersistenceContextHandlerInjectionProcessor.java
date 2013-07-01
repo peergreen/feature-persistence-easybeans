@@ -21,9 +21,9 @@ import org.apache.felix.ipojo.annotations.Component;
 import org.apache.felix.ipojo.annotations.Instantiate;
 import org.apache.felix.ipojo.annotations.Provides;
 
-import com.peergreen.injection.Binding;
-import com.peergreen.injection.HandlerInjectionProcessor;
-import com.peergreen.injection.InjectionContext;
+import com.peergreen.metadata.adapter.Binding;
+import com.peergreen.metadata.adapter.HandlerInjectionProcessor;
+import com.peergreen.metadata.adapter.InjectionContext;
 
 @Component
 @Instantiate
