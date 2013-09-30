@@ -16,6 +16,7 @@
 package com.peergreen.persistence.easybeans.extension.webapplication;
 
 import java.net.URL;
+import java.net.URLClassLoader;
 
 import org.ow2.easybeans.loader.EasyBeansClassLoader;
 
@@ -38,8 +39,15 @@ public class WebApplicationPersistenceClassLoaderProcessor {
         // Gets the classloader
         ClassLoader classLoader = webApplication.getClassLoader();
 
+        ClassLoader newClassLoader = null;
+        if (classLoader instanceof URLClassLoader) {
+            URL[] urls =  ((URLClassLoader) classLoader).getURLs();
+            newClassLoader = new EasyBeansClassLoader(urls, classLoader.getParent());
+        } else {
+            newClassLoader = new EasyBeansClassLoader(new URL[0], classLoader);
+        }
+
         // Adds the enhanced classloader
-        ClassLoader newClassLoader = new EasyBeansClassLoader(new URL[0], classLoader);
         webApplication.setClassLoader(newClassLoader);
     }
 
