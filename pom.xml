@@ -21,7 +21,7 @@
   <packaging>pom</packaging>
   <groupId>com.peergreen.persistence</groupId>
   <artifactId>peergreen-persistence-easybeans-parent</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2</version>
 
   <name>Peergreen Persistence with EasyBeans</name>
 
@@ -40,7 +40,7 @@
     <connection>scm:git:https://forge.peergreen.com/git/git/feature/persistence/persistence-easybeans.git</connection>
     <developerConnection>scm:git:https://forge.peergreen.com/git/git/feature/persistence/persistence-easybeans.git</developerConnection>
     <url>https://forge.peergreen.com/git/summary/?r=feature/persistence/persistence-easybeans.git</url>
-    <tag>HEAD</tag>
+    <tag>PEERGREEN_PERSISTENCE_EASYBEANS_PARENT_1_0_2</tag>
   </scm>
 
   <build>
